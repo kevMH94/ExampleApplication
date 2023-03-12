@@ -9,13 +9,13 @@ workflows:
                     branches:
                         only:
                             - main
-            -deploy:
+            - deploy:
                 filters:
                     branches:
                         only:
-                            -main
+                            - main
                 requires:
-                    -build
+                    - build
 
 jobs:
     build:
